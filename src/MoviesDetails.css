@@ -1,0 +1,127 @@
+.allcontainer {
+    background: rgba(0, 0, 0, 0.699);
+    height: 100%;
+}
+
+.movieDetailContainer{
+    width: 60%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.movie-det-upper{
+    display:flex;
+    height: 450px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.699);
+    color: rgba(255, 255, 255, 0.808);
+}
+@media screen and (max-width: 600px) {
+    .movie-det-upper{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .movie-det-desc {
+        margin-left: 0;
+    }
+    .movie-det-actors{
+
+    }
+    .movieDetailContainer{
+        width: 100%;
+    }
+    .movie-det-title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.movie-det-desc {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin: 10px 30px;
+}
+
+.movie-det-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.average-circle {
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.average-circle h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.movie-det-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.movie-det-actors {
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.925);
+}
+
+.movie-det-actors-box {
+    text-align: center;
+    width: 150px;
+}
+
+.movie-det-actors-box img {
+    width: 150px;
+}
+
+.movie-det-gallerie {
+    background-color: rgba(0, 0, 0, 0.699);
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.movie-det-gallerie h3 {
+    padding: 20px;
+}
+
+.movie-det-downbox {
+    background: rgba(255, 255, 255, 0.808);
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.movie-det-downbox h3 {
+    padding: 20px;
+}
+
+.movie-det-grid {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 20px;
+}
+
+.movie-det-grid-item {
+    width: 200;
+    height: 300;
+}
